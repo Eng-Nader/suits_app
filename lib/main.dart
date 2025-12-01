@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:suit/views/splash.dart';
+import 'package:suit/views/on_borading.dart';
 
 void main() {
   runApp(SutisApp());
@@ -25,7 +25,7 @@ class SutisApp extends StatelessWidget {
             seedColor: Color(0xffDD8560),
           ),
         ),
-        home: SplashView(),
+        home: OnBoradingView(),
       ),
     );
   }
