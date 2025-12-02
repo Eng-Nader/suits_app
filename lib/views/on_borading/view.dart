@@ -25,7 +25,10 @@ class _OnBoradingViewState extends State<OnBoradingView> {
           'Discover a wide range of fashion categories, browse new arrivals and shop your favourites',
       title: 'Explore & Shop',
     ),
-    _Model(image: 'on_borading_3.jpg', title: 'Hi,Shop Now', subTitle: ''),
+    _Model(
+      image: 'on_borading_3.jpg',
+      title: 'Hi,Shop Now',
+    ),
   ];
   int _currentIndex = 0;
   final _controller = PageController();
