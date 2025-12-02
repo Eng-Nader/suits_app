@@ -22,6 +22,12 @@ class SutisApp extends StatelessWidget {
         navigatorKey: navKey,
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
+          filledButtonTheme: FilledButtonThemeData(
+            style: FilledButton.styleFrom(
+              backgroundColor: Color(0xffDD8560),
+              fixedSize: Size.fromHeight(56),
+            ),
+          ),
           scaffoldBackgroundColor: Colors.white,
           fontFamily: 'Montserrat',
           colorScheme: ColorScheme.fromSeed(
