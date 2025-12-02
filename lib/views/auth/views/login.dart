@@ -56,6 +56,26 @@ class LoginView extends StatelessWidget {
             SizedBox(height: 10.h),
             AppLoginOrSingup(isLogin: true),
             SizedBox(height: 20.h),
+            Stack(
+              alignment: AlignmentDirectional.center,
+              children: [
+                Divider(
+                  color: Color(0xffE5E7EB),
+                  thickness: 1,
+                ),
+                Text(
+                  'OR',
+                  style: TextStyle(
+                    color: Color(0xffA1A8B0),
+                    fontSize: 16.sp,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 20.h,
+            ),
             AppSocialButton(),
           ],
         ),
