@@ -32,6 +32,7 @@ class SplashView extends StatelessWidget {
                 fontSize: 128.sp,
               ),
             ),
+            
           ],
         ),
       ),

@@ -7,11 +7,13 @@ class AppImage extends StatelessWidget {
     required this.image,
     this.height,
     this.width,
-    this.fit = BoxFit.scaleDown,
+    this.fit = BoxFit.scaleDown, this.color,
   });
   final String image;
   final double? height, width;
   final BoxFit fit;
+  final Color ? color ; 
+  
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +23,7 @@ class AppImage extends StatelessWidget {
         height: height,
         width: width,
         fit: fit,
+        color: color,
       );
     } else if (image.startsWith('http')) {
       return Image.network(
@@ -28,6 +31,7 @@ class AppImage extends StatelessWidget {
         height: height,
         width: width,
         fit: fit,
+        color: color,
       );
     }
     return Image.asset(
@@ -35,6 +39,7 @@ class AppImage extends StatelessWidget {
       fit: fit,
       height: height,
       width: width,
+      color: color,
     );
   }
 }
