@@ -44,7 +44,7 @@ class SutisApp extends StatelessWidget {
             enabledBorder: _buildBorder(),
           ),
           scaffoldBackgroundColor: Color(0xffF4F5F7),
-          fontFamily: 'Montserrat',
+          fontFamily: 'Inter',
           colorScheme: ColorScheme.fromSeed(
             seedColor: Color(0xffDD8560),
           ),

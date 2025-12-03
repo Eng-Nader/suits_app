@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:suit/core/logic/helper_method.dart';
 import 'package:suit/core/ui/app_bar.dart';
 import 'package:suit/core/ui/app_button.dart';
 import 'package:suit/core/ui/app_input.dart';
 import 'package:suit/core/ui/app_login_or_singup.dart';
 import 'package:suit/core/ui/app_social_button.dart';
+import 'package:suit/views/auth/views/forget_password.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -42,7 +44,7 @@ class LoginView extends StatelessWidget {
               isPadsswrod: true,
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () => goTo(page: ForgetPasswordView()),
               child: Text(
                 'Forgot Password?',
                 style: TextStyle(

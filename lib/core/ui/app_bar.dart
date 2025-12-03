@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:suit/core/ui/app_image.dart';
@@ -6,7 +5,7 @@ import 'package:suit/core/ui/app_image.dart';
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({
     super.key,
-    required this.title,
+    this.title,
   });
 
   final String? title;
@@ -17,7 +16,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: true,
       backgroundColor: Colors.transparent,
       surfaceTintColor: Colors.transparent,
-      leading: AppImage(image: 'arrow_back.svg'),
+      leading: IconButton(
+        onPressed: () => Navigator.pop(context),
+        icon: AppImage(image: 'arrow_back.svg'),
+      ),
       title: title != null
           ? Text(
               title!,

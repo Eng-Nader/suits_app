@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:suit/core/logic/helper_method.dart';
+import 'package:suit/views/auth/views/sign_up.dart';
 
 class AppLoginOrSingup extends StatelessWidget {
   const AppLoginOrSingup({super.key, this.isLogin = false});
@@ -21,7 +23,15 @@ class AppLoginOrSingup extends StatelessWidget {
           WidgetSpan(
             alignment: PlaceholderAlignment.middle,
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                if (isLogin) {
+                  goTo(
+                    page: SignUpView(),
+                  );
+                } else {
+                  Navigator.pop(context);
+                }
+              },
               child: Text(isLogin ? 'Sign Up' : 'Login'),
             ),
           ),
