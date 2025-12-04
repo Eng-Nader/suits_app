@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:suit/core/ui/app_bar.dart';
 import 'package:suit/core/ui/app_button.dart';
 import 'package:suit/core/ui/app_fild.dart';
